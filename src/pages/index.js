@@ -1,5 +1,11 @@
 import React from "react"
-import { Row, Col, Container, ListGroup } from "react-bootstrap"
+import { Row, Col, Container, ListGroup, Carousel } from "react-bootstrap"
+import logo from "../images/logo.png"
+import slide1 from "../images/slideone.jpg"
+import slide2 from "../images/slidetwo.jpg"
+import slide3 from "../images/slidethree.jpg"
+import slide4 from "../images/slidefour.jpg"
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,63 +13,57 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout pageInfo={{ pageName: "index" }}>
     <SEO title="Home" keywords={[`gatsby`, `react`, `bootstrap`]} />
-    <Container className="text-center">
-      <Row>
-        <Col>
-          <p>
-            This is a Gatsby Starter that I frequently use to get jump started
-            on quick website builds. It includes the following packages:
-          </p>
-        </Col>
-      </Row>
-      <Row className="justify-content-center my-3">
-        <Col md="6">
-          <ListGroup>
-            <ListGroup.Item
-              action
-              href="https://getbootstrap.com"
-              target="_blank"
-            >
-              Bootstrap
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://react-bootstrap.github.io/"
-              target="_blank"
-            >
-              react-bootstrap
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://react-icons.netlify.com"
-              target="_blank"
-            >
-              react-icons
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://www.gatsbyjs.org/packages/gatsby-plugin-sass/"
-              target="_blank"
-            >
-              gatsby-plugin-sass
-            </ListGroup.Item>
-          </ListGroup>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <p>
-            This starter also includes a navbar that sticks to the top of the
-            screen when the user scrolls past it, and a footer that stays at the
-            bottom of the screen.
-          </p>
-          <p>
-            For more documentation on these packages and how they work, please
-            refer to the pages linked in the list above.
-          </p>
-        </Col>
-      </Row>
-    </Container>
+      <Carousel id="homepageCarousel" interval="10000">
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={slide1}
+      alt="First slide"
+      fluid
+    />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={slide2}
+      alt="Second slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={slide3}
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={slide4}
+      alt="Fourth slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+<Container fluid id="fluos">hi</Container>
   </Layout>
 )
 

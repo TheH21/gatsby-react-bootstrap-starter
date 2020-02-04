@@ -1,7 +1,37 @@
 #site-navbar {
-  background-color: $color-primary;
+  background-color: #4FC4D9;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 100;
+
+}
+
+#content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 130px;
+
+}
+
+#logo {
+  max-width: 250px;
+}
+
+#navContent {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#navLabels {
+  background-color: green;
+  display: flex;
+  float: right;
+}
+
+#whiteBox {
+  height: 100px;
+  padding-left: 50px;
+  background-color: green;
 }
