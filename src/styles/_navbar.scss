@@ -7,13 +7,6 @@
   position: relative;
 }
 
-#content {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 130px;
-
-}
-
 #logo {
   max-width: 250px;
 }
@@ -24,11 +17,6 @@
   padding-bottom: 87px;
 }
 
-#navLabels {
-  background-color: white;
-  display: flex;
-  float: right;
-}
 
 #whiteBox {
   padding-left: 50px;
@@ -42,12 +30,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#navCategs {
-  display: flex;
-}
-
-p {
-  font-family: 'Montserrat', sans-serif;
 }
