@@ -37,12 +37,15 @@ const CustomNavbar = ({ pageInfo }) => {
       <Button variant="outline-success">Search</Button>
     </Form>
   </Navbar.Collapse>
-  </div>
-  </Container>
+    </div>
+      <Container id="whiteBox" class="fixed-bottom">
+          <Container id="navCategs">
+            <p>Hey</p>
+          </Container>
+      </Container>
+    </Container>
 </Navbar>
-<Container fluid="false" id="whiteBox">
-  Whoa
-</Container>
+
     </>
   )
 }
